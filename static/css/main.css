@@ -1,0 +1,22 @@
+
+/*
+-- Some color ref: --
+
+MediumVioletRed: #C71585
+PaleVioletRed:   #DB7093
+Violet:          #EE82EE
+BlueViolet:      #8A2BE2
+DarkViolet:      #9400D3
+
+*/
+
+body {
+    font-size: 15px;
+    font-family: "monospace";
+
+    margin: auto;
+    max-width: 600px;
+
+    background-color: cadetblue;
+    margin-top: 15px;
+}

@@ -1,0 +1,47 @@
+
+# ______  _              _
+# |  ___|| |            | |
+# | |_   | |  __ _  ___ | | __   __ _  _ __   _ __
+# |  _|  | | / _` |/ __|| |/ /  / _` || '_ \ | '_ \
+# | |    | || (_| |\__ \|   <  | (_| || |_) || |_) |
+# \_|    |_| \__,_||___/|_|\_\  \__,_|| .__/ | .__/
+#                                     | |    | |
+#                                     |_|    |_|
+
+DEBUG      = True
+SECRET_KEY = 'secretKey'
+
+# Db
+SQLALCHEMY_DATABASE_URI = "mysql://maari:maari@localhost/maari"
+SQLALCHEMY_TRACK_MODIFICATIONS = True
+
+
+#  _                           _
+# | |                         (_)
+# | |      ___    __ _   __ _  _  _ __    __ _
+# | |     / _ \  / _` | / _` || || '_ \  / _` |
+# | |____| (_) || (_| || (_| || || | | || (_| |
+# \_____/ \___/  \__, | \__, ||_||_| |_| \__, |
+#                 __/ |  __/ |            __/ |
+#                |___/  |___/            |___/
+
+import logging
+log = {
+    "version": 1,
+    "formatters": {
+        "default": {
+            "format": "%(asctime)s %(name)-12s %(levelname)-8s %(message)s"
+        }
+    },
+    "handlers": {
+        "streamHandler": {
+            "class":     "logging.StreamHandler",
+            "formatter": "default",
+            "level":     logging.DEBUG
+        }
+    },
+    "root": {
+        "handlers": ["streamHandler"],
+        "level":    logging.DEBUG
+    },
+}
