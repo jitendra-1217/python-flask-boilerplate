@@ -8,6 +8,10 @@
         |_|     |___/                                                                                       |_|
 
 
+
+<img src="https://cloud.githubusercontent.com/assets/5562241/18217809/8aa39796-717c-11e6-9d00-833633995cd7.png" alt="Browser screenshot"  height="450", width="400" />
+
+
 ## What?
 
 - Code structure for a normal python flask application
